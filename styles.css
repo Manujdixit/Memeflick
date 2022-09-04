@@ -13,70 +13,13 @@ html{
     --navbar-height: 59px;
 }
 
-/* Navigation Bar */
-#navbar {
-    display: flex;
-    align-items: center;
-    top: 0px;
-    position:relative;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#navbar::before{
-    content: "";
-    background-color: black;
-    position: absolute;
-    top:0px;
-    left:0px;
-    height: 100%;
-    width:100%;
-    z-index: -1;
-    opacity: 0.7;
-}
-
-/* Navigation Bar: Logo and Image */
-#logo{
-    margin: 10px 34px;
-}
-
-#logo img{
-    height: 59px;
-    margin: 3px 6px;
-}
-
-
-/* Navigation Bar: List Styling */
-
-#navbar ul{
-    display: flex;
-    font-family: 'Baloo Bhai', cursive;
-}
-
-#navbar ul li{ 
-    list-style: none;
-    font-size: 1.3rem;
-}
-
-#navbar ul li a{
-    color: white;
-    display: block;
-    padding: 3px 22px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-#navbar ul li a:hover{
-    color: black;
-    background-color: white;
-}
 
 /* Home Section */
 #home{
     display: flex;
     flex-direction: column;
     padding:3px 200px;
-    height: 550px;
+    height: 500px;
     justify-content: center;
     align-items: center;
 }
@@ -109,6 +52,7 @@ html{
 #services{
     margin: 34px;
     display: flex;
+    justify-content: center;
 }
 #services .box{ 
     border: 2px solid brown;
@@ -218,17 +162,88 @@ footer{
     padding: 12px;
 }
 
-.btn{
-    padding: 6px 20px;
-    border: 2px solid white;
-    background-color: brown;
+.button {
+    background-color: #ff1c1c;
+    border: none;
     color: white;
-    margin: 17px;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    cursor:pointer;
+    padding: 4px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
-
 .center{
     text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  .footer1 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*background-color: red;*/
+    color: white;
+    text-align: right;
+    justify-content: center;
+ }
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position:relative;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
 }
