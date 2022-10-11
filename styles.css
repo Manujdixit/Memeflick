@@ -16,6 +16,7 @@ html{
 
 /* Home Section */
 #home{
+    
     display: flex;
     flex-direction: column;
     padding:3px 200px;
@@ -27,30 +28,42 @@ html{
 #home::before{ 
     content: "";
     position: absolute;
-    background: url('https://github.com/Manujdixit/manujdixit.github.io/blob/main/images/smilies%20overloaded.jpg?raw=true') no-repeat center center/cover;
+    background: url('images/smilies_overloaded.jpg');
     height: 642px;
     top:0px;
     left:0px;
     width: 100%;
     z-index: -1;
-    opacity:0.89;
+    opacity:0.6;
+}
+h2{
+    
+font-family: 'Noto Sans', sans-serif;
+}
+.content{
+    font-family: 'Montserrat', sans-serif;
 }
 
+
+
 #home h1{
+    font-family: 'Noto Sans', sans-serif;
     color:white;
     text-align: center;
-    font-family: 'Bree Serif', serif;
+    
 }
 
 #home p{
-    color:white;
+    color: #111101;
+    font-family: 'Montserrat', sans-serif;
+    
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'Bree Serif', serif;
+    
 }
 /* Services Section */
 #services{
-    margin: 34px;
+    margin: 5rem 2rem;
     display: flex;
     justify-content: center;
 }
@@ -70,7 +83,7 @@ html{
 }
 
 #services .box p{
-    font-family: 'Bree Serif', serif;
+    font-family: 'Montserrat', sans-serif;
 
 } 
 
@@ -82,7 +95,7 @@ html{
 #client-section::before{
  content: "";
  position: absolute;
- background: url('https://github.com/Manujdixit/manujdixit.github.io/blob/main/images/abstract-solid-shining-yellow-gradient-studio-wall-room-background.jpg?raw=true');
+ background: url('images/abstract-solid-shining-yellow-gradient-studio-wall-room-background.jpg');
  width: 100%;
  height: 100%;
  z-index: -1;
@@ -93,6 +106,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5rem;
 }
 
 .client-item{
@@ -115,7 +129,7 @@ html{
     height: 100%;
     z-index: -1;
     opacity: 0.7;
-    background: url('https://github.com/Manujdixit/manujdixit.github.io/blob/main/images/abstract-solid-shining-yellow-gradient-studio-wall-room-background.jpg?raw=true') no-repeat center center/cover;
+    background: url('images/abstract-solid-shining-yellow-gradient-studio-wall-room-background.jpg');
 
 }
 #contact-box{
@@ -138,8 +152,8 @@ html{
 
 #contact-box label{
    font-size: 1.3rem;
-   font-family: 'Bree Serif', serif;
-
+   
+   font-family: 'Noto Sans', sans-serif;
 }
 
 
@@ -151,31 +165,37 @@ footer{
 
 /* Utility Classes */
 .h-primary{
-    font-family: 'Bree Serif', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 3.8rem;
     padding: 12px;
 }
 
 .h-secondary{
-    font-family: 'Bree Serif', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.3rem;
     padding: 12px;
 }
 
 .button {
+    font-family: 'Noto Sans', sans-serif;
     background-color: #ff1c1c;
     border: none;
+    border-radius: 10px;
     color: white;
-    padding: 4px 6px;
+    padding: 10px 14px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin: 4px 2px;
+    margin: 25px 8px;
     cursor: pointer;
+}
+.button:hover{
+    background-color: #fc3232;
 }
 .center{
     text-align: center;
+    padding-top: 4rem;
 }
 html {
     scroll-behavior: smooth;
@@ -192,6 +212,7 @@ html {
  }
 /* Navigation Bar */
 #navbar {
+    font-family: 'Noto Sans', sans-serif;
     display: flex;
     align-items: center;
     top: 0px;
